@@ -1,0 +1,7 @@
+<article *ngFor="let n of notes">
+    <h4>Задача: {{ n.task }}</h4>
+    <p *ngIf="n.description">Описание: {{ n.description }}</p>
+    <p *ngIf="!n.description">Описание отсутствует!</p>
+    <span>Дата: {{ n.date }}</span> <br><br>
+    <span>Приоритет: {{ n.priority }}</span>
+</article>

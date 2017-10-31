@@ -4,12 +4,14 @@ import { MdlModule } from '@angular-mdl/core';
 import { AppComponent } from './app.component';
 import {HeaderComponent} from './layout/header/header.component';
 import {FooterComponent} from './layout/footer/footer.component';
+import {NoteComponent} from './layout/note/note.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    NoteComponent
   ],
   imports: [
     BrowserModule,
