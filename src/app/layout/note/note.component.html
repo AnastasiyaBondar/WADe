@@ -1,9 +1,41 @@
-<article *ngFor="let n of notes">
+<!-- <article *ngFor="let n of notes">
     <h4>Задача: {{ n.task }}</h4>
     <p *ngIf="n.description">Описание: {{ n.description }}</p>
     <p *ngIf="!n.description">Описание отсутствует!</p>
     <span>Дата: {{ n.date }}</span> <br><br>
     <span>Приоритет: {{ n.priority }}</span>
     <a routerLink="/unfinished_tasks/{{n.id}}">Задача {{n.id}}</a>
-</article>
+</article> -->
+<div>
+    <label for="task">Задача</label>
+    <span>
+        <i class="fa fa-info" aria-hidden="true"></i>
+    </span>
+    <input type="text" id="task">
+    <br>
+
+    <label for="description">Описание</label>
+    <textarea id="description"></textarea>
+    <br>
+
+    <label for="date">Дата</label>
+    <span>
+        <i class="fa fa-calendar" aria-hidden="true"></i>
+    </span>
+    <input type="date" id="date">
+    <br>
+
+    <label for="priority">Приоритет</label>
+    <span>
+        <i class="fa fa-flag" aria-hidden="true"></i>
+    </span>
+    <select id="priority">
+        <option value="">Низкий</option>
+        <option value="">Средний</option>
+        <option value="">Высокий</option>
+    </select>
+</div>
+
+<br><br><br><br><br>
+
 <router-outlet></router-outlet>
