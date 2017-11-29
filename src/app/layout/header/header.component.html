@@ -1,11 +1,11 @@
 <mdl-layout-header-row>
-  <mdl-layout-title>Title</mdl-layout-title>
+  <mdl-layout-title>Ежедневник</mdl-layout-title>
   <mdl-layout-spacer></mdl-layout-spacer>
   <!-- Navigation. We hide it in small screens. -->
-  <nav class="mdl-navigation mdl-layout--large-screen-only">
-     <a class="mdl-navigation__link" >Link</a>
-     <a class="mdl-navigation__link" >Link</a>
-     <a class="mdl-navigation__link" >Link</a>
+  Задачи:
+  <nav class="mdl-navigation">
+     <a class="mdl-navigation__link" routerLink="/unfinished_tasks">Незавершенные</a>
+     <a class="mdl-navigation__link" routerLink="/finished_tasks">Завершенные</a>
   </nav>
 
   <span>Добро пожаловать, {{ username }}!</span>

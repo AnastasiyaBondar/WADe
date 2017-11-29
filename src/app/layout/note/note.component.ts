@@ -27,7 +27,7 @@ export class NoteComponent implements OnInit {
 },
 {
   id: 3,
-  task: 'Съездить на вокзал.',
+  task: 'Съездить на вокзал',
   description: 'Купить билеты домой.',
   date: new Date(2017, 10, 7),
   priority: 'Высокий'

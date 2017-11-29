@@ -4,4 +4,6 @@
     <p *ngIf="!n.description">Описание отсутствует!</p>
     <span>Дата: {{ n.date }}</span> <br><br>
     <span>Приоритет: {{ n.priority }}</span>
+    <a routerLink="/unfinished_tasks/{{n.id}}">Задача {{n.id}}</a>
 </article>
+<router-outlet></router-outlet>
