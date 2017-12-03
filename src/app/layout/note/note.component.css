@@ -13,7 +13,7 @@ label {
     width: 16%;
 }
 
-input, textarea, select {
+input[type="text"], input[type="date"], textarea, select {
     width: 70%;
     margin-bottom: 15px;
 }
@@ -39,7 +39,7 @@ span {
     margin-right: -10px;
 }
 
-input, textarea {
+input[type="text"], input[type="date"], textarea, select {
     font-size: 14px;
     color: #555;
     background-color: #fff;
@@ -48,7 +48,7 @@ input, textarea {
     border-radius: 4px;
 }
 
-input {
+input[type="text"], input[type="date"],     select {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
 }
@@ -58,5 +58,19 @@ textarea {
 }
 
 input[type="date"] {
-    padding: 1.6px 0;
+    padding: 1.5px 0;
+}
+
+select {
+    padding: 3px 0;
+}
+
+input[type="submit"] {
+    display: inline-block;
+    margin-left: 84%;
+}
+
+table {
+    width: 72.7%;
+    margin: auto;
 }

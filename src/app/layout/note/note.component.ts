@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgModel } from '@angular/forms';
 
 @Component({
   selector: 'app-note',
@@ -7,35 +8,40 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NoteComponent implements OnInit {
 
-  notes: Model.Note[];
+  notes: Model.Note[] = [];
 
-  constructor() {
-    this.notes = [
-{
-    id: 1,
-    task: 'Сделать лабораторную по вебу',
-    description: 'Лабораторная работа №3. Сделать отчет и отправить преподавателю.',
-    date: new Date(2017, 9, 31),
-    priority: 'Высокий'
-},
-{
-  id: 2,
-  task: 'Съездить на Барабашово',
-  description: '',
-  date: new Date(2017, 10, 5),
-  priority: 'Средний'
-},
-{
-  id: 3,
-  task: 'Съездить на вокзал',
-  description: 'Купить билеты домой.',
-  date: new Date(2017, 10, 7),
-  priority: 'Высокий'
-}
-];
-}
+  task: string = 'Task1';
+  description: string = 'Description1';
+  date: Date = new Date();
+  priority: string = 'Низкий';
 
-  ngOnInit() {
+  constructor() {}
+  ngOnInit() {}
+
+  Data() {
+    this.notes.push({
+      id: 1,
+      task: this.task,
+      description: this.description,
+      date: this.date,
+      priority: this.priority
+    });
+    console.log(this.notes);
   }
 
+  priorityChange(event) {
+    const selectedIndex = event.srcElement.selectedIndex;
+
+    switch (selectedIndex) {
+      case 0: this.priority = 'Низкий';
+      break;
+      case 1: this.priority = 'Средний';
+      break;
+      case 2: this.priority = 'Высокий';
+    }
+
+    console.log(event);
+    console.log(selectedIndex);
+    console.log(this.priority);
+  }
 }

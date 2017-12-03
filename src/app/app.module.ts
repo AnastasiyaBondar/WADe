@@ -9,6 +9,7 @@ import { FinishedTasksComponent } from './layout/finished-tasks/finished-tasks.c
 import { NoteComponent } from './layout/note/note.component';
 import { RouterModule } from '@angular/router';
 import { EditComponent } from './layout/edit/edit.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { EditComponent } from './layout/edit/edit.component';
   imports: [
     BrowserModule,
     MdlModule,
+    FormsModule,
     RouterModule.forRoot ([
       {path: '', component: UnfinishedTasksComponent},
       {path: 'finished_tasks', component: FinishedTasksComponent},
