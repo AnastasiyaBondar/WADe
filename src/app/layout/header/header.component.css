@@ -1,0 +1,19 @@
+mdl-layout-header-row {
+    background-color: rgb(67, 148, 63);
+    color: rgb(255, 255, 255);
+    font-family: 'CANDARA';
+    font-size: 17px;
+}
+
+mdl-layout-title {
+    font-family: 'century gothic';
+    font-size: 23px;
+}
+
+a:link { 
+    color: rgb(255, 255, 255) !important;
+    font-size: 17px;
+   } 
+a:hover {
+    color: rgb(1, 19, 6);
+   } 
