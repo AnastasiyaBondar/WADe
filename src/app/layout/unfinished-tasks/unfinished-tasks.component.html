@@ -1,3 +1,21 @@
-<p>
-  unfinished-tasks works!
-</p>
+<table *ngIf="note_ser.notes.length">
+    <thead>
+        <tr>
+            <th>Задача</th>
+            <th>Описание</th>
+            <th>Дата</th>
+            <th>Приоритет</th>
+            <th>Выполнен</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let n of note_ser.notes">
+            <td><a routerLink="/unfinished_tasks/{{n.id}}">{{n.task}}</a></td>
+            <td>{{n.description}}</td>
+            <td>{{n.date}}</td>
+            <td [class.red]="color.red(n.priority)" [class.yellow]="color.yellow(n.priority)" [class.green]="color.green(n.priority)">{{n.priority}}</td>
+            <td><input type="checkbox" (change)="note_ser.change(n.task)"></td>
+        </tr>
+    </tbody>
+</table>
+

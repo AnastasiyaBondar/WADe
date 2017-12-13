@@ -1,32 +1,51 @@
-div {
-    margin: 20px;
+form {
+    margin: 20px auto;
 }
 
 label {
-    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-    color: #666666;
+    color: #313131;
     margin-right: 15px;
     font-size: 13px;
     line-height: 1.475;
     text-align: right;
     display: inline-block;
     width: 16%;
+    font-weight: bold;
 }
 
-input[type="text"], input[type="date"], textarea, select {
-    width: 70%;
-    margin-bottom: 15px;
-}
-
-div label:nth-child(5) {
+form label:nth-child(6) {
     vertical-align: top;
 }
 
+input, textarea, select {
+    width: 70%;
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #555;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 4px 0;
+    border-radius: 4px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
 textarea {
+    width: 72.7%;
     height: 60px;
 }
 
-span {
+input[type="date"] {
+    position: relative;
+    top: -1px;
+    padding: 1.3px 0;
+}
+
+select {
+    padding: 3px 0;
+}
+
+span.icon {
     display: inline-block;
     width: 30px;
     padding: 2px 5px;
@@ -39,38 +58,20 @@ span {
     margin-right: -10px;
 }
 
-input[type="text"], input[type="date"], textarea, select {
+button {
+    display: inline-block;
+    margin-left: 82.8%;
+    padding: 6px 12px;
+    color: #fff;
+    cursor: pointer;
+    background-color: rgb(67, 148, 63);
     font-size: 14px;
-    color: #555;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    padding: 4px 0;
     border-radius: 4px;
 }
 
-input[type="text"], input[type="date"],     select {
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-}
-
-textarea {
-    width: 72.7%;
-}
-
-input[type="date"] {
-    padding: 1.5px 0;
-}
-
-select {
-    padding: 3px 0;
-}
-
-input[type="submit"] {
-    display: inline-block;
-    margin-left: 84%;
-}
-
-table {
-    width: 72.7%;
-    margin: auto;
+.alert-danger {
+    display: block;
+    margin-left: 17%;
+    color: rgb(173, 6, 6);
+    font-style: italic;
 }

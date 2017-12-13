@@ -1,0 +1,9 @@
+i {
+    margin: 20px 0;
+    background: url('404.jpg') top center no-repeat;
+    background-size: contain;
+    width: 1300px;
+    height: 430px;
+    display: block;
+    position: relative;
+}

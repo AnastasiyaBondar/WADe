@@ -1,15 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { NoteService } from '../../services/note.service';
+import { ColorService } from '../../services/color.service';
 
 @Component({
   selector: 'app-finished-tasks',
   templateUrl: './finished-tasks.component.html',
   styleUrls: ['./finished-tasks.component.css']
 })
-export class FinishedTasksComponent implements OnInit {
+export class FinishedTasksComponent {
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+  constructor(private note_ser: NoteService, private color: ColorService) { }
 }

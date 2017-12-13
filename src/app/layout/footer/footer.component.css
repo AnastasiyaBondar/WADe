@@ -5,3 +5,9 @@ div {
 .copyright {
     margin-left: 870px;
 }
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}

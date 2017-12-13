@@ -11,9 +11,10 @@ mdl-layout-title {
 }
 
 a:link { 
-    color: rgb(255, 255, 255) !important;
+    color: rgb(255, 255, 255);
     font-size: 17px;
-   } 
+   }
+
 a:hover {
     color: rgb(1, 19, 6);
    } 

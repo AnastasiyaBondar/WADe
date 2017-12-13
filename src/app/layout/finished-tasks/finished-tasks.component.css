@@ -1,0 +1,10 @@
+i {
+    background: url('completed.png') no-repeat;
+    background-size: contain;
+    width: 500px;
+    height: 200px;
+    display: block;
+    position: absolute;
+    right: -60px;
+    bottom: 120px;
+}

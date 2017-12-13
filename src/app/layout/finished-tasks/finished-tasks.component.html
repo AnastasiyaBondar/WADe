@@ -1,3 +1,19 @@
-<p>
-  finished-tasks works!
-</p>
+<table *ngIf="note_ser.completed.length">
+    <thead>
+        <tr>
+            <th>Задача</th>
+            <th>Описание</th>
+            <th>Дата</th>
+            <th>Приоритет</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let c of note_ser.completed">
+            <td>{{c.task}}</td>
+            <td>{{c.description}}</td>
+            <td>{{c.date}}</td>
+            <td [class.red]="color.red(c.priority)" [class.yellow]="color.yellow(c.priority)" [class.green]="color.green(c.priority)">{{c.priority}}</td>
+        </tr>
+    </tbody>
+</table>
+<i></i>
